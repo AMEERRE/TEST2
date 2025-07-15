@@ -332,6 +332,18 @@ body[dir="ltr"] {
   transition: var(--transition);
 }
 
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 /* Hero Section */
 .hero {
   padding-top: 120px;
@@ -1433,6 +1445,21 @@ section:nth-child(even) {
     display: flex;
   }
   
+  .nav-controls {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1000; /* زيادة z-index لضمان ظهور الأزرار فوق القائمة */
+  }
+  
+  .theme-toggle, .lang-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .timeline::before {
     left: 30px;
   }
@@ -1516,6 +1543,23 @@ section:nth-child(even) {
   .contact-form input,
   .contact-form textarea {
     padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  /* تحسين تنسيق الأقسام */
+  section {
+    padding: 3rem 1rem;
+  }
+  
+  /* تحسين تنسيق الروابط الاجتماعية */
+  .social-links {
+    gap: 0.5rem;
+  }
+  
+  .social-link {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
   }
 }
 

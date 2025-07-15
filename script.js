@@ -316,7 +316,7 @@ class PersonalWebsite {
             });
 
             // تبديل القائمة المتنقلة
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileToggle = document.querySelector('.hamburger');
             if (mobileToggle) {
                 mobileToggle.addEventListener('click', () => {
                     this.toggleMobileMenu();
