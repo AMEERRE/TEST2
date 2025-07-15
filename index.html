@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع الشخصي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 data-key="site-title">إبداع تقني بلمسة احترافية</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-key="nav-home">الرئيسية</a></li>
+                <li><a href="#about" data-key="nav-about">من أنا</a></li>
+                <li><a href="#experience" data-key="nav-experience">الخبرات</a></li>
+                <li><a href="#blog" data-key="nav-blog">اعمالي</a></li>
+                <li><a href="#contact" data-key="nav-contact">اتصل بي</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" title="تبديل الوضع الداكن">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="lang-toggle" class="lang-btn">
+                    <i class="fas fa-globe"></i>
+                    <span id="current-lang">EN</span>
+                </button>
+              
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image fade-in">
+                <img id="profile-image" src="photo_2025-07-13_02-41-48.jpg" alt="الصورة الشخصية">
+                <button class="edit-btn" data-edit="profile-image"><i class="fas fa-camera"></i></button>
+            </div>
+            <div class="hero-text">
+                <h1>مرحباً، أنا امير </h1>
+                <p>مطور ومصمم شغوف بالتكنولوجيا والإبداع</p>
+                <div class="hero-buttons fade-in">
+                    <a href="#about" class="btn primary" data-key="btn-about">تعرف علي</a>
+                    <a href="#contact" class="btn secondary" data-key="btn-contact">تواصل معي</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من أنا -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-key="about-title">من أنا</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="editable" data-key="about-intro">أهلاً! أنا شخص شغوف بالتكنولوجيا والإبداع، أحب تطوير الحلول المبتكرة وتعلم أشياء جديدة كل يوم.</p>
+                    
+                    <h3 data-key="skills-title">مهاراتي</h3>
+                    <div class="skills-grid" id="skills-container">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="skill-item">
+                           <i class="fas fa-laptop-code"></i>
+                            <span>IT Specialist </span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                         <i class="fas fa-chart-line"></i>
+                            <span>Data Analysis  </span>
+                        </div>
+                        <div class="skill-item">
+                           <i class="fas fa-cog"></i>
+                            <span>Software</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Services</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Web Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخبرات -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-key="experience-title">خبراتي</h2>
+            <div class="timeline" id="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="editable" data-key="exp1-title"> تكنولوجيا المعلومات (IT)</h3>
+                        <h4 class="editable" data-key="exp1-company">حل المشكلات التقنية ودعم المستخدمين باحترافية.</h4>
+                        <p class="editable" data-key="exp1-desc">مهارات في تنصيب البرمجيات، إعداد الشبكات الأساسية، ترقية الأجهزة، وتقديم الإرشادات للمستخدمين لتحقيق أقصى استفادة من أجهزتهم</p>
+                    </div>
+                </div>
+            
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="editable" data-key="exp2-title">تطوير المواقع والمدونات </h3>
+                        <h4 class="editable" data-key="exp2-company">إنشاء مواقع بسيطة وعملية بتصاميم واضحة. </h4>
+                        <p class="editable" data-key="exp2-desc">تطوير مواقع شخصية ومدونات (مثل موقعي على GitHub Pages)، مع التركيز على سهولة الاستخدام والتصميم النظيف </p>
+                    </div>
+                </div>
+            
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="editable" data-key="exp3-title">تصميم أنظمة الدفع والفوترة </h3>
+                        <h4 class="editable" data-key="exp3-company">تطوير حلول ذكية لإدارة المدفوعات والفواتير بسهولة. </h4>
+                        <p class="editable" data-key="exp3-desc">أصمم أنظمة دفع وفوترة مخصصة، مثل أنظمة وصل الصيانة، بهدف تسهيل عمليات المحاسبة، تنظيم البيانات، وتحسين تجربة العملاء. أركز على تقديم حلول عملية، مرنة، وآمنة تلائم احتياجات الأعمال الصغيرة والمتوسطة. </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="editable" data-key="exp4-title">توثيق رسمي لمعرفتي ومهاراتي التقنية</h3>
+                        <h4 class="editable" data-key="exp4-company">.أحمل عدة شهادات متخصصة في مجالات البرمجة والحاسوب</h4>
+                        <p class="editable" data-key="exp4-desc">.شهادة في البرمجة من موقع Programming Advise.
+
+شهادة في مكونات الحاسوب المادية من Cisco.
+
+شهادة في أساسيات الحاسوب من Iraq PC Training Center.
+
+أسعى دائمًا لتطوير نفسي والحصول على شهادات جديدة، لدعم شغفي بالتكنولوجيا وتقديم حلول مبتكرة. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اليوميات -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title" data-key="blog-title">اعمالي </h2>
+            <div class="blog-controls">
+            </div>
+
+            <div class="blog-slider" id="blog-container">
+                <article class="blog-post">
+                    <img src="photo_2025-07-13_02-41-48.jpg" alt="مرحبًا بكم في موقعي الإلكتروني" class="blog-post-image">
+                    <h3 class="editable" data-key="post1-title">مرحبًا بكم في موقعي الإلكتروني!</h3>
+                    <p class="editable" data-key="post1-excerpt">اليوم أحب أشارككم بعض المعلومات عني، حتى تتعرفوا علي أكثر.
+أنا أمير أحمد حسن، عمري 24 سنة، من العراق — كربلاء.
+أدرس حاليًا هندسة تقنيات الحاسوب، وهو المجال الذي وجدته الأقرب لشغفي.
+منذ صغري، كنت مولعًا بالتكنولوجيا وأحب تجربة أي جهاز جديد أو استكشاف طريقة عمله. هذا الفضول دفعني لتعلّم البرمجة وصيانة الحواسيب والهواتف، وتطوير مهاراتي التقنية خطوة بخطوة.
+لدي خبرة عملية في البرمجة، وأعمل أيضًا على تطوير الحلول التقنية والأنظمة، مثل تصميم أنظمة الدفع والفوترة، وتبسيط عمليات الصيانة والإصلاح. 
+إلى جانب دراستي وخبرتي التقنية، أحب التعلّم المستمر، وأؤمن أن التكنولوجيا تتطور بسرعة، ومن المهم أن نواكبها دائمًا. حصلت على عدة شهادات متخصصة، مثل شهادة في البرمجة، وأساسيات الحاسوب المادية، وأساسيات الحاسوب العام، لدعم معرفتي بشكل أكاديمي وعملي في آن واحد.
+هدفي من هذا الموقع هو مشاركة خبراتي، مشاريعي، والأفكار التي أعمل عليها، حتى يستفيد منها كل شخص مهتم بالتقنية أو يفكر في دخول هذا المجال.
+شكرًا لكم على زيارتكم، وأتطلع للتواصل معكم، ومشاركة المزيد قريبًا! 🌟</p>
+                    <a href="#" class="read-more" data-key="read-more">اقرأ المزيد</a>
+                </article>
+                
+                <article class="blog-post">
+                    <img src="photo_2025-07-13_02-41-48.jpg" alt="تطوير المهارات التقنية في عصر الذكاء الاصطناعي" class="blog-post-image">
+                    <h3 class="editable">تطوير المهارات التقنية في عصر الذكاء الاصطناعي</h3>
+                    <p class="editable">في عالم يتطور بسرعة كبيرة، أصبح الذكاء الاصطناعي جزءًا لا يتجزأ من حياتنا اليومية والمهنية. كمهندس تقني، أرى أهمية كبيرة في مواكبة هذه التطورات والاستفادة منها في تطوير مهاراتنا.
+
+الذكاء الاصطناعي يفتح آفاقًا جديدة للمبرمجين والمطورين، حيث يمكن استخدامه لأتمتة المهام الروتينية، وتحسين جودة البرمجيات، وتطوير حلول مبتكرة لمشاكل معقدة.
+
+من خلال تجربتي الشخصية، وجدت أن تعلم أساسيات الذكاء الاصطناعي وتطبيقاته في مجال البرمجة قد أضاف قيمة كبيرة لمهاراتي وفتح لي فرصًا جديدة للإبداع والابتكار.
+
+أنصح كل مهتم بالمجال التقني بالاطلاع على أساسيات الذكاء الاصطناعي وتعلم كيفية دمجه في مشاريعه البرمجية، فهذا سيكون مفتاحًا للنجاح في المستقبل القريب.</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </article>
+                
+                <article class="blog-post">
+                    <h3 class="editable">أهمية تصميم واجهات المستخدم في تطوير المواقع</h3>
+                    <p class="editable">تصميم واجهات المستخدم هو أحد أهم جوانب تطوير المواقع والتطبيقات الحديثة. من خلال خبرتي في هذا المجال، لاحظت أن الموقع الجميل والسهل الاستخدام يحقق نتائج أفضل بكثير من المواقع المعقدة، حتى لو كانت تقدم نفس المحتوى والخدمات.
+
+عند تصميم واجهة مستخدم، يجب التركيز على عدة عناصر أساسية: البساطة، سهولة التنقل، سرعة التحميل، والتوافق مع مختلف الأجهزة. هذه العناصر تساهم في تحسين تجربة المستخدم وزيادة معدلات التفاعل مع الموقع.
+
+أحد أهم الدروس التي تعلمتها هو أن التصميم الجيد يجب أن يكون غير مرئي - بمعنى أن المستخدم يجب أن يتمكن من استخدام الموقع بسهولة دون الشعور بأي عوائق أو صعوبات.
+
+أنصح المطورين بقضاء وقت كافٍ في مرحلة التصميم قبل البدء في البرمجة، فهذا يوفر الكثير من الوقت والجهد في المراحل اللاحقة من المشروع.</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </article>
+            </div>
+            
+            <div class="blog-navigation">
+                <button id="prev-post" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                <button id="next-post" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-key="contact-title">تواصل معي</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <span class="editable" data-key="name">م.امير احمد</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span class="editable" data-key="phone">07813623682</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span class="editable" data-key="email">sawed.2001.k@gmail.com</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://instagram.com/az_6ui" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/07813623682" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="الاسم" data-key-placeholder="name-placeholder" required>
+                    <input type="email" placeholder="البريد الإلكتروني" data-key-placeholder="email-placeholder" required>
+                    <textarea placeholder="الرسالة" data-key-placeholder="message-placeholder" required></textarea>
+                    <button type="submit" data-key="send-message">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- نافذة التعديل -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 data-key="edit-content">تعديل المحتوى</h3>
+            <div id="edit-form"></div>
+        </div>
+    </div>
+
+    <!-- نافذة إضافة منشور -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 data-key="add-new-post">إضافة منشور جديد</h3>
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="عنوان المنشور" required>
+                <textarea id="post-content" placeholder="محتوى المنشور" required></textarea>
+                <button type="submit" data-key="publish">نشر</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- إضافة ملف قاعدة البيانات قبل ملف script.js -->
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- قسم حقوق الملكية -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>جميع الحقوق محفوظة &copy; <span id="year">2025</span></p>
+                    <p>م.امير احمد | مبرمج و مطور</p>
+                    <p>هاتف: 07813623682 | بريد إلكتروني: sawed.2001.k@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/az_6ui" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/07813623682" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
